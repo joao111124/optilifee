@@ -261,3 +261,287 @@ font-family: Arial, sans-serif;
 background: #081A38;
 color: #000000;
 }
+
+
+
+
+
+  /* RESET BÁSICO */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* BODY */
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  /* CABEÇALHO / CONTAINER */
+
+  .container1 {
+    display: flex;
+    justify-content: space-between; /* logo à esquerda, título+menu à direita */
+    align-items: center;
+    background-color: #0E2346;
+    padding: 0 50px;
+    height: 120px;
+    width:100%;
+   
+        /* ...seus outros estilos... */
+        padding: 10px 10px;  /* 40px acima/abaixo e 20px nas laterais */
+        height: auto;        /* remov   e o height fixo */
+        margin-bottom: 50px;
+        
+      
+      }
+
+      .container2 {
+        align-items: center;
+        display: flex;
+        background-color: #AEBCD4;
+        padding: 20px 50px;
+        height: 580px;
+        width:80%;
+        border-radius: 20px;
+        margin: 0 auto; 
+        padding-bottom: 80px;
+      }
+
+      .espaco-branco {
+        height: 60px;
+        background-color: white;
+      }
+  
+      .input {
+        border: 2px solid transparent;
+        width: 550px;
+        height: 50px;
+        padding-left: 0.8em;
+        outline: none;
+        overflow: hidden;
+        background-color: #F3F3F3;
+        border-radius: 10px;
+        transition: all 0.5s;
+        margin-top: 210px;
+        margin-left: 280px;
+        font-size: 18px;
+
+       
+      }
+      .placehoulder {
+       position: relative;
+       margin-left: 5px;
+      }
+
+      .input:hover,
+      .input:focus {
+        border: 2px solid #4A9DEC;
+        box-shadow: 0px 0px 0px 7px rgb(74, 157, 236, 20%);
+        background-color: white;
+      }
+      
+      
+  /* LOGO */
+  #logo-principal {
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  /* ÁREA DE TÍTULO + MENU */
+  .h1 {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    position: relative;
+    left: 10px;
+  }
+  
+  .h1 h1 {
+    color: #FFFFFF;
+    font-size: 25px;
+    position: relative;
+    left: 820px;
+    margin-top: -80px;
+  }
+  
+  .h3 h1{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    position: relative;
+    left: 400px;
+    color: #1F488B;
+    bottom: 130px;
+    margin-top: 240px;
+  }
+  /* MENU */
+  .menu {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-top: 160px;
+    position: relative;
+    left: -300px;
+  }
+  
+  .menu p {
+    
+    color: #FFFFFF;
+    padding: 10px 15px;
+    cursor: pointer;
+    bottom: 100px;
+    
+  }
+
+  .menu1  p {
+
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    position: relative;
+    left: 200px;
+    display: flex;
+text-align: center;
+color: #FFFFFF;
+bottom: 100px;
+    
+  }
+
+  .menu2 p {
+   color: #1A386B;
+   margin-top: -80px;
+   position: relative;
+   left: -1215px;
+
+  }
+  
+
+  
+  
+  /* ========== RESPONSIVIDADE ========== */
+  /* Até 1024px */
+  @media (max-width: 1024px) {
+    .container1 {
+      padding: 0 15px;
+    }
+    .h1 h1 {
+      font-size: 22px;
+    }
+    .menu p {
+      padding: 8px 12px;
+      font-size: 0.95em;
+    }
+    .input {
+      max-width: 20em;
+      font-size: 1em;
+    }
+  }
+  
+  /* Até 768px */
+  @media (max-width: 768px) {
+
+    .container1 {
+      flex-direction: column;
+      justify-content: center;
+      height: auto;
+      padding: 20px;
+      gap: 15px;
+    }
+    .h1 {
+      flex-direction: column;
+      gap: 10px;
+      text-align: center;
+    }
+    .menu {
+      justify-content: center;
+    }
+    .input {
+      width: 95%;
+      max-width: none;
+    }
+  }
+  
+  /* Até 480px */
+  @media (max-width: 480px) {
+    .h1 h1 {
+      font-size: 18px;
+    }
+    .menu p {
+      padding: 6px 8px;
+      font-size: 0.85em;
+    }
+    .input {
+      height: 2.5em;
+      font-size: 1em;
+    }
+  }
+  
+
+  .chatbox {
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 100%;
+    position: relative;
+    margin-top: 260px;
+  }
+  
+  .mensagem {
+    flex-grow: 1;
+    overflow-y: auto;
+    max-height: 400px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    max-width: 70%;
+    padding: 5px 7px;
+    margin: 5px;
+    border-radius: 15px;
+    word-wrap: break-word;
+    position: relative;
+    margin-top: 0px;
+    
+  }
+  
+  .usuario {
+    background-color: #ffffff;
+    align-self: flex-end;
+  }
+  
+  .lumi {
+    background-color: #e0ecff;
+    align-self: flex-start;
+  }
+  
+  
+  .input-area {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 10px;
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+    right: 20px;
+  }
+  
+  .input-area input {
+    flex: 1;
+  }
+  
+  .input-area button {
+    background-color: #4A9DEC;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 200px;
+  }
+  
